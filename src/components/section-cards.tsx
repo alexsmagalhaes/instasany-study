@@ -57,7 +57,7 @@ function SectionCards(): ReactNode {
       <section ref={sectionTriggerRef} className="w-full pb-20">
          <GridContainer>
             <Image
-               className="sticky top-56 mx-auto -mt-[32rem] mb-16 z-10"
+               className="sticky top-56 mx-auto -mt-[32rem] mb-16 z-10 scale-50"
                src={MockupImage}
                alt="Mockup principal"
                ref={mockupPhoneRef}
@@ -66,12 +66,12 @@ function SectionCards(): ReactNode {
                Faça <span className="text-green-highlight">você</span> mesmo de casa
             </h2>
             <div className="relative w-full max-w-home-cards-area mx-auto h-home-cards-lenght">
-               <Image ref={cardRef[0]} className="absolute top-8 left-44" src={Card01} alt="Card01" />
-               <Image ref={cardRef[1]} className="absolute left-0 bottom-32" src={Card02} alt="Card02" />
-               <Image ref={cardRef[2]} className="absolute bottom-0 left-80" src={Card03} alt="Card03" />
-               <Image ref={cardRef[3]} className="absolute top-0 right-32" src={Card04} alt="Card04" />
-               <Image ref={cardRef[4]} className="absolute right-0 bottom-28" src={Card05} alt="Card05" />
-               <Image ref={cardRef[5]} className="absolute bottom-0 right-80" src={Card06} alt="Card06" />
+               <Image ref={cardRef[0]} className="absolute opacity-0 top-8 left-44" src={Card01} alt="Card01" />
+               <Image ref={cardRef[1]} className="absolute opacity-0 left-0 bottom-32" src={Card02} alt="Card02" />
+               <Image ref={cardRef[2]} className="absolute opacity-0 bottom-0 left-80" src={Card03} alt="Card03" />
+               <Image ref={cardRef[3]} className="absolute opacity-0 top-0 right-32" src={Card04} alt="Card04" />
+               <Image ref={cardRef[4]} className="absolute opacity-0 right-0 bottom-28" src={Card05} alt="Card05" />
+               <Image ref={cardRef[5]} className="absolute opacity-0 bottom-0 right-80" src={Card06} alt="Card06" />
             </div>
          </GridContainer>
       </section>
