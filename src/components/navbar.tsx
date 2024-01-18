@@ -20,7 +20,7 @@ const activityStyled: string = 'bg-green-activity !text-opacity-100 rounded-full
 
 function Navbar(): ReactNode {
    return (
-      <nav className="relative w-full h-24 bg-green-primary flex items bg-center">
+      <nav className="w-full h-24 bg-green-primary flex items bg-center relative top-0 z-50">
          <GridContainer className="flex items-center justify-between">
             <Image
                src={Logo}

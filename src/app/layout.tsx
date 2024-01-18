@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body className={epilogue.className}>
+      <body className={`${epilogue.className} relative`}>
         <Navbar/>
         {children}  
       </body>
