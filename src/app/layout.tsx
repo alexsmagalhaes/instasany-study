@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import { Epilogue } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/navbar'
+import ScrollSmooth from '@/services/scroll-smooth'
 
-const epilogue = Epilogue({ 
+const epilogue = Epilogue({
   subsets: ['latin'],
-  weight : ['500', '600', '700'],
+  weight: ['500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -13,17 +14,16 @@ export const metadata: Metadata = {
   description: 'Site desenvolvido apenas para fins educativos',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children, }: { children: React.ReactNode }) {
+
   return (
     <html lang="pt">
-      <body className={`${epilogue.className} relative`}>
-        <Navbar/>
-        {children}  
-      </body>
+      <ScrollSmooth>
+        <body className={`${epilogue.className} relative`}>
+          <Navbar />
+          {children}
+        </body>
+      </ScrollSmooth>
     </html>
   )
 }
